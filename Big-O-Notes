@@ -1,4 +1,4 @@
-The RAM Model of Comutation 
+The RAM Model of Computation 
   - RAM stands for Random Access Machine 
   - Lets us analyze algos independent of the hardware / language  
   - We measure the runtime of an algo by counting the number of steps 
@@ -7,4 +7,11 @@ The RAM Model of Comutation
       instance of size n
     * Average Case: average number of steps taken on any instance of size n
     * Worst Case: maximum number of steps taken on any instance of size n
-  
+  - Within the RAMMC the best, average, and worst case are hard to deal with 
+    precisely
+      * Better to deal with the the upper and lower bounds of function 
+        (Asymptotic Notation) 
+          + Upper Bound: 
+          + Lower Bound:
+          + Tight Bound:
+
