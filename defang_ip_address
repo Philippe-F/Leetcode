@@ -1,0 +1,15 @@
+var defangIPaddr = function(address) {
+    let newAddy = "";
+    for ( i = 0; i < address.length; i++ ) {
+		let char = address[i];
+		
+		if (char === ".") {
+			newAddy += "[.]";
+		} else {
+      newAddy += char;
+    }
+	}
+
+	return newAddy;
+};
+

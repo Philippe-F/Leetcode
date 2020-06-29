@@ -3,7 +3,8 @@ The RAM Model of Comutation
   - Lets us analyze algos independent of the hardware / language  
   - We measure the runtime of an algo by counting the number of steps 
   - Case Complexity 
-    * Best Case: the function defined by the minimum number of steps taken on an
+    * Best Case: the function defined by the minimum number of steps taken on any
       instance of size n
-    * Average Case:
-    * Worst Case: 
+    * Average Case: average number of steps taken on any instance of size n
+    * Worst Case: maximum number of steps taken on any instance of size n
+  
