@@ -1,0 +1,9 @@
+The RAM Model of Comutation 
+  - RAM stands for Random Access Machine 
+  - Lets us analyze algos independent of the hardware / language  
+  - We measure the runtime of an algo by counting the number of steps 
+  - Case Complexity 
+    * Best Case: the function defined by the minimum number of steps taken on an
+      instance of size n
+    * Average Case:
+    * Worst Case: 
