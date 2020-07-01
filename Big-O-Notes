@@ -1,3 +1,9 @@
+Big-O is the Asymtotic worst case runtime 
+
+Big-O analysis is not a way to formalize what the runtime of an algo will be 
+given a specific input size. It is a way to formlize how the number of steps will scale 
+according to the input size (the behavior of the line). 
+
 The RAM Model of Computation 
   - RAM stands for Random Access Machine 
   - Lets us analyze algos independent of the hardware / language  
@@ -11,6 +17,8 @@ The RAM Model of Computation
     precisely
       * Better to deal with the the upper and lower bounds of function 
         (Asymptotic Notation) 
+      * Asymptotic Notation: How we describe the behavior of a line as it approaches
+        some arbitrary limit (infinity) 
           + Upper Bound: 
           + Lower Bound:
           + Tight Bound:
