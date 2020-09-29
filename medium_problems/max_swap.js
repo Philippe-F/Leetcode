@@ -1,11 +1,12 @@
 // Given a non - negative integer, you could swap two digits at most once to get 
-// the maximum valued number.Return the maximum valued number you could get.
+// the maximum valued number. Return the maximum valued number you could get.
 
 var maximumSwap = function (num) {
   const numArr = num.toString().split("");
   let max;
   let swapIndex1
   let swapIndex2;
+
   for (let i = 0; i < numArr.length - 1; i++) {
     const val = parseInt(numArr[i]);
     max = val + 1;
