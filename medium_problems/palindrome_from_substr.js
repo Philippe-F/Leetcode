@@ -37,9 +37,9 @@ var canMakePaliQueries = function (str, queries) {
   }
 
   for (let i = 0; i < queries.length; i++) {
-    let start = queries[i][0], end = queries[i][1]
-    let subStr = str.slice(start, end + 1)
-    let oddCount = isPalindrome(subStr)
+    let start = queries[i][0], end = queries[i][1], 
+    subStr = str.slice(start, end + 1),
+    oddCount = isPalindrome(subStr)
 
     if (subStr.length === 1) {
       queries[i] = true
