@@ -52,3 +52,29 @@ var canMakePaliQueries = function (str, queries) {
 
   return queries
 };
+
+var canMakePaliQueries = function (s, queries) {
+  let sol = [];
+  for (const q of queries) {
+    if (q[2] >= 26) {
+      sol.push(true);
+      continue;
+    }
+    let d = dFromPalindrome(s.slice(q[0], q[1] + 1));
+    d > q[2] ? sol.push(false) : sol.push(true);
+  }
+  return sol;
+};
+
+
+
+
+function dFromPalindrome(s) {
+  let counts = new Array(26).fill(0)
+
+  for (let i = 0; i < s.length; i++) {
+    counts[s[i].charCodeAt(0) - 'a'.charCodeAt(0)] = (counts[s[i].charCodeAt(0) - 'a'.charCodeAt(0)] + 1) % 2;
+  }
+
+  return Math.floor(counts.reduce((a, b) => a + b, 0) / 2)
+}
