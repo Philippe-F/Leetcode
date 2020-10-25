@@ -1,3 +1,7 @@
+// Given a non - empty string s and a dictionary wordDict containing a list 
+// of non - empty words, add spaces in s to construct a sentence where each 
+// word is a valid dictionary word.Return all such possible sentences.
+
 const dfs = (s, set, memo) => {
   if (memo.has(s)) {
     return memo.get(s);
@@ -29,11 +33,7 @@ const dfs = (s, set, memo) => {
   return result;
 }
 
-/**
- * @param {string} s
- * @param {string[]} wordDict
- * @return {string[]}
- */
+
 var wordBreak = function (s, wordDict) {
   return dfs(s, new Set(wordDict), new Map);
 };
