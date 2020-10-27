@@ -8,3 +8,18 @@
 // of the permutation P.Notice that the position of queries[i] in P is 
 // the result for queries[i]. Return an array containing the result for the 
 // given queries.
+
+const processQueries = (queries, m) => {
+  const p = [...Array(m)].map((_, idx) => idx + 1);
+  const ans = [];
+
+  queries.forEach(item => {
+    const index = p.indexOf(item);
+    ans.push(index);
+
+    p.unshift(item);
+    p.splice(index + 1, 1);
+  });
+
+  return ans;
+};
