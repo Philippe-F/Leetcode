@@ -21,5 +21,5 @@ const processQueries = (queries, m) => {
     p.splice(index + 1, 1);
   });
 
-  return ans;
+
 };
