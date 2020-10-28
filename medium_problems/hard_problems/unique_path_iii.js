@@ -28,23 +28,7 @@ function uniquePathsIII(grid) {
     }
   }
 
-  function go(x, y, count) {
-    if (grid[x][y] === -1 || grid[x][y] === Infinity) return;
 
-    if (x === end[0] && y === end[1]) {
-      if (count === emptyCount) res++;
-      return;
-    }
-
-    grid[x][y] = Infinity; // Mark visited
-    for (const [di, dj] of dirs) {
-      const i = x + di;
-      const j = y + dj;
-      if (i < 0 || i >= h || j < 0 || j >= w) continue;
-      go(i, j, count + 1);
-    }
-    grid[x][y] = 0; // Reset
-  }
 
   go(start[0], start[1], 0);
   return res;
