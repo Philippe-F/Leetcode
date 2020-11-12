@@ -37,9 +37,7 @@ var canFinish = function (numCourses, prerequisites) {
     const c = queue.pop();
     count += 1;
 
-    // Iterate through the prerequisites and decrement the indegree[course] 
-    // if it has the prereq of c. Once the indegree[course] === 0, 
-    // push it into the queue 
+ 
     for (const [course, prereq] of prerequisites) {
       if (prereq === c) {
         indegree[course] -= 1;
