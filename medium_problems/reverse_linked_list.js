@@ -1,3 +1,5 @@
+// Reverse a singly linked list.
+
 var reverseList = function (head) {
   let prev = null,
     cur = head;
